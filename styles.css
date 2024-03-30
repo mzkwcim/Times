@@ -1,24 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .stopwatch-container {
-    margin: 20px auto;
-    text-align: center;
-  }
-  
-  .stopwatch-row {
-    margin-bottom: 10px;
-  }
-  
-  .time-input {
-    width: 100px;
-    margin-right: 10px;
-  }
-  
-  .stopwatch-difference {
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: center; /* Dodajemy regułę dla centrowania tekstu */
-  }
-  
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  gap: 20px; 
+  margin: 20px auto;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.time-label {
+  margin-right: 10px; 
+  transform: translateX(-5px); 
+}
+
+.time-input {
+  width: calc(100px - 5px); 
+}
+
+.textarea-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+}
+
+.additional-textarea {
+  width: 200px; 
+  height: 100px; 
+  margin-left: 20px; 
+}
